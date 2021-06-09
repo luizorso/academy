@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="PT-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=width-device, initial-scale=1.0">
-<title>Projeto Academia</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=width-device, initial-scale=1.0">
+	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/006642858d.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap" rel="stylesheet">
+	<title>Projeto Academia</title>
 </head>
 <body>
-	<h3>Olá mundo Spring</h3>
-	<h3 th:text="${msg}"></h3>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#BDBDBD">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo_header-site.png"/>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
+				<a class="btn-nav nav-item nav-link"><i class="fas fa-home"></i> Home</a>
+				<a class="btn-nav nav-item nav-link"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
+				<a class="btn-nav nav-item nav-link"><i class="fas fa-search"></i> Pesquisar Aluno</a>
+				<a class="btn-nav nav-item nav-link btn-danger" ><i class="fas fa-times"></i> Sair</a>
+			</div>
+		</nav>
+	
+	</header>
+	<section class="neo-section" style="background-image: url('img/bg-index.jpg');">
+		<div class="sombra"></div>
+			<div class="center neo-container">
+				<h1 class="texto-centro">Sistema de Gerenciamento de Alunos</h1>
+		
+				<div class="botoes">
+					<div class="wm">
+						<h5 class="btn">CADASTRAR ALUNO</h5>
+					</div>
+					<div class="wm">
+						<h5 class="btn justify-content-center">PESQUISAR ALUNO</h5>
+					</div>
+				<div class="clear"></div>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<div class="rodape">
+			<span>Todos os direitos reservado - 2020 &copy; Luiz Orso</span>
+		</div>
+	</footer>
+	
 
 </body>
 </html>
